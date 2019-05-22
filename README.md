@@ -1,6 +1,6 @@
 # About
 
-Twitter script for connecting to Twitter stream, gather tweets that match a certain keyword, hashtag or mention and save them on a CSV file.
+Python script for connecting to Twitter stream, gather tweets that match a certain keyword, hashtag or mention and save them on a CSV file.
 
 # Requirements
 
