@@ -4,17 +4,11 @@ import ssl
 import time
 from requests.exceptions import Timeout, ConnectionError
 from requests.packages.urllib3.exceptions import ReadTimeoutError
-import sys
-
-''' setting the system default encoding as utf-8 at the start of the script,
-so that all strings are encoded using that.'''
-reload(sys)
-sys.setdefaultencoding('utf-8')
 
 # Add your Twitter API credentials
 consumer_key = "consumer_key"
 consumer_secret = "consumer_secret"
-access_key = "access_key"
+access_key = "access_key-NL7FCwJHipiQTPrWgIsmhLtuW87qa41nkVJvuokUc"
 access_secret = "access_secret"
 
 # Handling authentication with Twitter
@@ -52,7 +46,7 @@ class StreamListener(tweepy.StreamListener):
             tweet = (tweet.replace('&amp;', '&').replace('&lt;', '<')
                      .replace('&gt;', '>').replace('&quot;', '"')
                      .replace('&#39;', "'").replace(';', " ")
-                     .replace('\u', " "))
+                     .replace(r'\u', " "))
 
             # Save the keyword that matches the stream
             keyword_matches = []
