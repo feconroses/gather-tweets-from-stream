@@ -14,7 +14,7 @@ sys.setdefaultencoding('utf-8')
 # Add your Twitter API credentials
 consumer_key = "consumer_key"
 consumer_secret = "consumer_secret"
-access_key = "access_key-NL7FCwJHipiQTPrWgIsmhLtuW87qa41nkVJvuokUc"
+access_key = "access_key"
 access_secret = "access_secret"
 
 # Handling authentication with Twitter
