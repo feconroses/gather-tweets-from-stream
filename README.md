@@ -16,4 +16,4 @@ To run this script, you'll need python 3.7 and the following libraries:
 
 Clone this repository to your computer. Finally, within the cloned folder, type the following in the command line to run the script locally:
 
-`python stream.py`
+`python3 stream.py`
